@@ -55,4 +55,3 @@ This project focuses on clean state switching, data attributes, and dynamic cont
 
 
 
-Free to use for learning and personal projects.
