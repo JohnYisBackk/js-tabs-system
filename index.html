@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Dropdown Menu PRO</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a href="#" class="brand">
+          <span class="brand-mark">D</span>
+          <span>Dropdown PRO</span>
+        </a>
+
+        <nav class="nav-actions">
+          <button class="ghost-btn">Docs</button>
+          <button class="ghost-btn">Pricing</button>
+
+          <div class="dropdown" id="dropdown">
+            <button class="dropdown-trigger" id="dropdownTrigger">
+              <span class="avatar">J</span>
+              <span class="trigger-text">John Studio</span>
+              <span class="chevron">⌄</span>
+            </button>
+
+            <div class="dropdown-menu" id="dropdownMenu">
+              <div class="menu-header">
+                <span class="avatar large">J</span>
+                <div>
+                  <strong>John Studio</strong>
+                  <small>Frontend Developer</small>
+                </div>
+              </div>
+
+              <div class="menu-divider"></div>
+
+              <button class="menu-item">
+                <span class="menu-icon">👤</span>
+                <span>
+                  <strong>Profile</strong>
+                  <small>View your account</small>
+                </span>
+                <span class="check">✔</span>
+              </button>
+
+              <button class="menu-item">
+                <span class="menu-icon">⚙️</span>
+                <span>
+                  <strong>Settings</strong>
+                  <small>Manage preferences</small>
+                </span>
+                <span class="check">✔</span>
+              </button>
+
+              <button class="menu-item">
+                <span class="menu-icon">📊</span>
+                <span>
+                  <strong>Analytics</strong>
+                  <small>Track activity</small>
+                </span>
+                <span class="check">✔</span>
+              </button>
+
+              <div class="menu-divider"></div>
+
+              <button class="menu-item danger">
+                <span class="menu-icon">↪</span>
+                <span>
+                  <strong>Logout</strong>
+                  <small>End current session</small>
+                </span>
+                <span class="check">✔</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="hero">
+        <section class="hero-copy">
+          <span class="eyebrow">Mini UI Component</span>
+          <h1>Clean dropdown interaction for modern dashboards.</h1>
+          <p>
+            Practice opening, closing, outside click detection, Escape key
+            support, and active UI states with vanilla JavaScript.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-btn">Explore component</button>
+            <button class="secondary-btn">View details</button>
+          </div>
+        </section>
+
+        <section class="preview-panel">
+          <div class="panel-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="preview-content">
+            <div class="metric-card">
+              <small>Total components</small>
+              <strong>14</strong>
+            </div>
+
+            <div class="metric-card highlight">
+              <small>Dropdown states</small>
+              <strong>Open / Closed</strong>
+            </div>
+
+            <div class="activity-list">
+              <div class="activity-item">
+                <span></span>
+                <p>Click trigger to open menu</p>
+              </div>
+
+              <div class="activity-item">
+                <span></span>
+                <p>Click outside to close menu</p>
+              </div>
+
+              <div class="activity-item">
+                <span></span>
+                <p>Press Escape to close menu</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast">
+      <span class="toast-message"></span>
+      <span class="toast-progress"></span>
+    </div>
+  </body>
+</html>
